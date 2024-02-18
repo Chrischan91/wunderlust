@@ -6,9 +6,17 @@
     <title>Wunderlust Travel</title>
 </head>
 <body>
+    
+    <a href="#main">Skip to main content</a>
+
     <header>
         <h1>Wunderlust Travel</h1>
-        <img src="images/logo-L.png" alt="Wunderlust Travel Logo">
+        <picture>
+            <source media="(max-width: 320px)" srcset="images/logo-S.png">
+            <source media="(max-width: 780px)" srcset="images/logo-M.png">
+            <source media="(min-width: 1024px)" srcset="images/logo-L.png">
+            <img src="images/logo-L.png" alt="Wunderlust Travel Logo">
+        </picture>
         <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
         <nav>
             <ul>
@@ -24,9 +32,25 @@
         <section id="destinations">
             <h2>Majorca</h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-            <img src="images/majorca-waves-L.png" alt="Waves in Majorca">
-            <img src="images/majorca-beach-L.png" alt="Beach in Majorca">
-            <img src="images/majorca-cove-L.png" alt="Cove in Majorca">
+            <picture>
+                <source media="(max-width: 320px)" srcset="images/majorca-waves-S.png">
+                <source media="(max-width: 780px)" srcset="images/majorca-waves-M.png">
+                <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
+                <img src="images/majorca-waves-L.png" alt="Waves in Majorca">
+            </picture>
+            <picture>
+                <source media="(max-width: 320px)" srcset="images/majorca-beach-S.png">
+                <source media="(max-width: 780px)" srcset="images/majorca-beach-M.png">
+                <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png">
+                <img src="images/majorca-beach-L.png" alt="Waves in Majorca">
+            </picture>
+            <picture>
+                <source media="(max-width: 320px)" srcset="images/majorca-cove-S.png">
+                <source media="(max-width: 780px)" srcset="images/majorca-cove-M.png">
+                <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png">
+                <img src="images/majorca-waves-L.png" alt="Waves in Majorca">
+            </picture>
+        
         </section>
 
         <section id="plan-your-trip">
@@ -103,30 +127,55 @@
                     <!-- SVG for Chevron Right -->
                 </a>
             </div>
+            
         </section>
 
         <section id="testimonials">
             <h2>Testimonials</h2>
             <article>
+                <h3>Miranda Blake's Experience</h3>
+                <picture>
+                <source media="(max-width: 320px)" srcset="images/miranda-blake-S.png">
+                <source media="(max-width: 780px)" srcset="images/miranda-blake-M.png">
+                <source media="(min-width: 1024px)" srcset="images/miranda-blake-L.png">
                 <img src="images/miranda-blake-L.png" alt="Miranda Blake">
+                </picture>
                 <p>Traveling From: London, England</p>
                 <p>“I traveled here for business, but my stay was extended. Now it is my home.”</p>
             </article>
 
             <article>
-                <img src="images/max-winter-L.png" alt="Max Winter">
+                <h3>Max Winter's Journey</h3>
+                <picture>
+                    <source media="(max-width: 320px)" srcset="images/max-winter-S.png">
+                    <source media="(max-width: 780px)" srcset="images/max-winter-M.png">
+                    <source media="(min-width: 1024px)" srcset="images/max-winter-L.png">
+                    <img src="images/max-winter-L.png" alt="Miranda Blake">
+                </picture>
                 <p>Traveling From: Berlin, Germany</p>
                 <p>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</p>
             </article>
 
             <article>
-                <img src="images/ines-villegoes-L.png" alt="Inés Villegoes">
+                <h3>Inés Villegoes' Adventure</h3>
+                <picture>
+                    <source media="(max-width: 320px)" srcset="images/ines-villegoes-S.png">
+                    <source media="(max-width: 780px)" srcset="images/ines-villegoes-M.png">
+                    <source media="(min-width: 1024px)" srcset="images/ines-villegoes-L.png">
+                    <img src="images/ines-villegoes-L.png" alt="Miranda Blake">
+                </picture>
                 <p>Traveling From: Barcelona, Spain</p>
                 <p>“A very safe environment for all travelers.”</p>
             </article>
 
             <article>
-                <img src="images/carmen-lorenzo-L.png" alt="Carmen Lorenzo">
+                <h3>Carmen Lorenzo's Reflections</h3>
+                <picture>
+                    <source media="(max-width: 320px)" srcset="images/carmen-lorenzo-S.png">
+                    <source media="(max-width: 780px)" srcset="images/carmen-lorenzo-M.png">
+                    <source media="(min-width: 1024px)" srcset="images/carmen-lorenzo-L.png">
+                    <img src="images/carmen-lorenzo-L.png" alt="Miranda Blake">
+                </picture>
                 <p>Traveling From: Madrid, Spain</p>
                 <p>“Live, laugh, love-- everything you need in Majorca.”</p>
             </article>
@@ -146,7 +195,7 @@
               </svg>
 
               <article>               
-                <p>Size: 1,405 miles squared</p>
+                <h4>Size: 1,405 miles squared</h4>
               </article>   
 
               <h3>elevation</h3>
@@ -158,7 +207,7 @@
               </svg>
               
               <article>               
-                <p>Elevation: 4,741 feet</p>
+                <h4>Elevation: 4,741 feet</h4>
               </article> 
 
               <h3>location</h3>
@@ -169,7 +218,7 @@
               </svg>
 
               <article>               
-                <p>Location: Mediterranean</p>
+                <h4>Location: Mediterranean</h4>
               </article>
 
               <h3>population</h3>
@@ -182,7 +231,7 @@
               </svg>
 
               <article>               
-                <p>Population: 923,608</p>
+                <h4>Population: 923,608</h4>
               </article>
               
             <!-- Details about size, elevation, location, population omitted for brevity -->
