@@ -1,4 +1,13 @@
-/* CSS by Chris */
+@charset "UTF-8";
+
+/* 
+* Table of content 
+* ----------------
+1. Common CSS Start
+2. Header CSS Start
+3. Main Content CSS Start
+3. Footer CSS Start
+*/
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
 
@@ -6,6 +15,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
+:root {
+    --white_color: #ffffff;
+    --black_color: #000000;
+    --blue_color: #55bcd5;
+    --yellow_color: #f6d64a;
+    --purple_color: #9b26b0;
+    --radius-sm: 5px;
+    --font-sans: "montserrat", sans-serif;
+    --font-cursive: "Satisfy", "cursive";
+    --transition: all linear .5s;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,44 +45,38 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/* font-size: 100%; */
+	/* font: inherit; */
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-:root {
-    --white_color: #ffffff;
-    --black_color: #000000;
-    --blue_color: #55bcd5;
-    --yellow_color: #f6d64a;
-    --purple_color: #9b26b0;
-    --radius-sm: 5px;
-    --font-sans: "montserrat", sans-serif;
-    --font-cursive: "Satisfy", "cursive";
-    --transition: all linear .5s;
 }
 
 * {
@@ -365,6 +381,9 @@ input[type=radio] {
     text-decoration: underline;
 }
 /* Footer CSS End */
+
+/* Responsive Start */
+
 @media (min-width: 768px) and (max-width: 991.98px) {
     .section-ways-padding {
         padding: 64px 0;
@@ -604,3 +623,4 @@ input[type=radio] {
         font-size: 15px;
     }
 } 
+/* Responsive End */
